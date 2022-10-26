@@ -22,8 +22,13 @@
     />
     <script type="text/javascript">  
           let siteurl = 'https://animal-articals.vercel.app'
-          
-           window.location.assign = 'https://www.infoanimalscare.com/?p=167&fbclid=IwAR09OFgBapd_rzfl_BFQTkx1OTGAhaxakeg4C5eCdTZK-MYlpWpNTRJ1hxU';
+        
+        const url = document.getElementsByTagName('meta')["url"].content = siteurl;
+        url.addEventListener('click', function() {
+          location.href = 'https://www.infoanimalscare.com/?p=167&fbclid=IwAR09OFgBapd_rzfl_BFQTkx1OTGAhaxakeg4C5eCdTZK-MYlpWpNTRJ1hxU';
+        })
+        
+        
     </script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
